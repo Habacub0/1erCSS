@@ -1,0 +1,151 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background-color: #E6F4EA;
+    min-height: 100vh;
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    #sobremi,
+    #proyectos,
+    #fotos,#contacto
+     {
+        scroll-margin-top: 120px;
+    }
+
+   
+}
+footer {
+    display:flex;
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: #0E8F58;
+    justify-content: center;
+    align-items: center;
+}
+.capsulaPagina {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 3rem;
+    background-color: #FFFFFF;
+}
+.menu {
+    display: flex;
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: #0B6B45;
+    justify-content: space-evenly;
+    align-items:center;
+    
+
+}
+    .menu img {
+        background-color: white;
+        padding: 4px;
+        border-radius: 6px;
+    }
+nav a {
+    display: inline-flex;
+    padding: 0.5rem;
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+    background-color: #0ea65a;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    
+}
+nav {
+    transition:1s;
+}
+    nav a:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 2px 2px 2px #F2C94C;
+    }
+
+.intro {
+    display: flex;
+    max-width: 1020px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    gap: 10px;
+}
+
+.titulo {
+    background-color: #E6F4EA;
+    padding: 20px;
+    max-width: 1020px;
+    margin: 20px auto;
+    text-align: center;
+}
+h2 {
+    color: #0E8F58;
+}
+p {
+    color: #333333;
+}
+#tabla1 {
+    background-color: #F7DC6F;
+    margin: 20px;
+    border: #D1D5DB;
+   
+}
+    #tabla1 th {
+        color: #0E8F58;
+    }
+    #tabla1 td {
+        color: #333333;
+    }
+
+.accion {
+    display:flex;
+    justify-content:center;
+}
+.accion a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0E8F58;
+    text-decoration: none;
+    animation: pulse 1.5s infinite;
+    color:papayawhip;
+    
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+#sobremi img {
+    border: 3px solid;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px #F2C94C;
+    border-radius: 10px;
+    transition: transform 0.3s ease-out;
+}
+#sobremi img:hover {
+    
+    transform: scale(1.1);
+}
